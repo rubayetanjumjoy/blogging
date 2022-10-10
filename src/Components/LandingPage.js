@@ -2,6 +2,7 @@ import React from 'react'
 import { Navbar } from './Navbar'
 import Cards from './Cards'
 import { Card } from 'react-bootstrap'
+import Footer from './Footer'
 const LandingPage = () => {
   return (
     <>
@@ -37,7 +38,7 @@ const LandingPage = () => {
      
     
     
-    
+    <Footer/>
     
     
     
