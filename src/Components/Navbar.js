@@ -19,12 +19,14 @@ export const Navbar = () => {
         </li>
          
         <li class="nav-item">
-          <Link class="nav-link " to="/about" tabindex="-1" aria-disabled="true">ABOUT</Link>
+          <Link class="nav-link " to="/about"  aria-disabled="true">ABOUT</Link>
         </li>
       </ul>
       
       <form class="d-flex">
-        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
+        <input class="form-control me-2" type="search" placeholder="Search" list="datalistOptions" id="exampleDataList" aria-label="Search"/>
+         
+ 
         <button class="btn btn-outline-light" type="submit">Search</button>
       
       
@@ -37,6 +39,7 @@ export const Navbar = () => {
     </div>
   </div>
 </nav>
+
 
     
     
