@@ -1,7 +1,47 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
+import { useEffect,useState } from 'react'
 export const Navbar = () => {
+  const [searchkey,setSearchkey]=useState('')
+  const [searchResults,setSearchresults]=useState('')
+  useEffect(() => {
+    if(searchkey!==""){
+      fetch(`http://127.0.0.1:8000/search?q=${searchkey}`)
+    .then(res => res.json())
+    .then(
+      (result) => {
+        
+        setSearchresults(result)
+
+         
+      },
+      (error) => {
+        console.log(error);
+      }
+    )
+   
+    }
+    if(searchkey==""){
+      setSearchresults("")
+
+    }
+
+
+  
+     
+  }, [searchkey])
+  useEffect(() => {
+    console.log(searchkey)
+  
+    
+  }, [searchkey])
+  const handleSearch=(e)=>{
+    
+   setSearchkey(e.target.value)
+  }
+  
   return (
+
     <>
     <nav class="navbar navbar-expand-lg  navbar-dark bg-dark">
   <div class="container-fluid">
@@ -24,10 +64,8 @@ export const Navbar = () => {
       </ul>
       
       <form class="d-flex">
-        <input class="form-control me-2" type="search" placeholder="Search" list="datalistOptions" id="exampleDataList" aria-label="Search"/>
-         
- 
-        <button class="btn btn-outline-light" type="submit">Search</button>
+        <input class="form-control me-2" type="search"  onChange={handleSearch} placeholder="Search" aria-label="Search" style={{position:'relative'}}/>
+        <button class="btn btn-outline-light" type="submit" >Search</button>
       
       
 
@@ -39,9 +77,17 @@ export const Navbar = () => {
     </div>
   </div>
 </nav>
+<div class="list-group"  style={{zIndex:1,position:'absolute',right:0,marginRight:'170px',width:'300px'}}>
+{ 
+ 
+searchResults && searchResults.map((item)=>(
+  <Link  to={`/details/${item.id}`} style={{ color: 'inherit', textDecoration: 'inherit'}} class="list-group-item list-group-item-action" key={item.id}>{item.title}</Link>
+)) 
 
 
-    
+}    
+
+</div>
     
     
     </>

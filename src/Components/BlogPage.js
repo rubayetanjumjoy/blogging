@@ -23,13 +23,15 @@ const BlogPage = () => {
       
          
       }, [])
+   
+    
   return (
     <>
         <Navbar/>
         <div className='container p-5'>
             <h4> All Post</h4>
-            <div className='container ms-5 '>
-              <div className='row  ' >
+            <div className='container'>
+              <div className='row justify-content-lg-center ' >
                
               {
                 loading ? 
@@ -37,7 +39,7 @@ const BlogPage = () => {
 
                 </div> :
                 items.map((item)=>(
-                  <div className='col-5 p-2'>
+                  <div className='col-lg-5 col-sm-12 p-2'>
                   <Cards   item={item} key={item.id} h={'700px'} />
                   </div>
                 ))

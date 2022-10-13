@@ -28,6 +28,7 @@ const LandingPage = () => {
   
      
   }, [])
+  
   return (
     <>
     <Navbar/>
@@ -43,7 +44,7 @@ const LandingPage = () => {
                </div>
                :
                items.map((item)=>(
-                 <div className='col-4 mt-3' >
+                 <div className='col-lg-4 col-sm-12 mt-3' >
                  <Cards   item={item} key={item.id}  />
                  </div>
                ))
