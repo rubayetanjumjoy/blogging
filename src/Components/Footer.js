@@ -8,8 +8,8 @@ const Footer = () => {
     <div class="container">
       <div class="row">
         <div class="col-lg-6">
-          <h4>Blog Page</h4>
-          <p>Avout Blog Page</p>
+          <h4>Bloging Page</h4>
+          <p>About Blog Page</p>
         </div>
         <div class="col-lg-6">
           <form action="" method="post">
@@ -23,9 +23,9 @@ const Footer = () => {
   
   <div class="container">
     <div class="copyright"> &copy; Copyright <strong>
-        <span>Blog</span>
+        <span>blog </span>
       </strong>. All Rights Reserved </div>
-    <div class="credits"> Blog <a href="#">Page</a>
+    <div class="credits"> Blog <a href="#">www.xyz.com</a>
     </div>
   </div>
 </footer>

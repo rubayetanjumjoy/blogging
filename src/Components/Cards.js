@@ -2,12 +2,12 @@ import React from 'react'
 import { Heart } from 'react-bootstrap-icons';
 import { Link } from 'react-router-dom';
 import moment from 'moment';
-const Cards = ({h,w,item}) => {
+const Cards = ({size,item}) => {
   let date_moment=moment(item.ts_created,"yyyy MM DD HH:mm:ss ZZ")
   let req_format=date_moment.format("DD MMM")
   
   return (
-    <div class="card" style={{width: `${w}`,height:`${h}`}}>
+    <div class={`card ${size}`} >
   <img class="card-img-top" src={item.image} alt=""/>
   <div className='card-body cardoverflow'  >
     <h5 class="card-title">
