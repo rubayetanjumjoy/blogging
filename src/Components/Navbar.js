@@ -7,7 +7,7 @@ export const Navbar = () => {
   const [searchResults,setSearchresults]=useState('')
   useEffect(() => {
     if(searchkey!==""){
-      fetch(`http://127.0.0.1:8000/search?q=${searchkey}`)
+      fetch(`http://13.229.249.236:8000/search?q=${searchkey}`)
     .then(res => res.json())
     .then(
       (result) => {

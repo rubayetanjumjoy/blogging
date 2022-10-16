@@ -8,7 +8,7 @@ const BlogPage = () => {
     const [loading,setLoading]=useState(true)
     useEffect(() => {
         setLoading(true)
-        fetch("http://127.0.0.1:8000/blog")
+        fetch("http://13.229.249.236:8000/blog")
             .then(res => res.json())
             .then(
               (result) => {

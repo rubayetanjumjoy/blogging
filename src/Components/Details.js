@@ -13,7 +13,7 @@ const Details = () => {
    const params=useParams()
    const {blogId}=params
    useEffect(() => {
-    fetch(`http://127.0.0.1:8000/blog/${blogId}`)
+    fetch(`http://13.229.249.236:8000/blog/${blogId}`)
         .then(res => res.json())
         .then(
           (result) => {
