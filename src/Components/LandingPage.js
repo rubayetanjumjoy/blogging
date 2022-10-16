@@ -15,7 +15,7 @@ const LandingPage = () => {
         .then(res => res.json())
         .then(
           (result) => {
-            console.log(result)
+            
              setItems(result)
              setLoading(false)
 
@@ -44,8 +44,8 @@ const LandingPage = () => {
                </div>
                :
                items.map((item)=>(
-                 <div className='col-lg-4 col-sm-12 mt-3' >
-                 <Cards   item={item} key={item.id} size="small"  />
+                 <div className='col-lg-4 col-sm-12 mt-3'key={item.id} >
+                 <Cards   item={item}  size="small"  />
                  </div>
                ))
                

@@ -12,7 +12,7 @@ const BlogPage = () => {
             .then(res => res.json())
             .then(
               (result) => {
-                console.log(result)
+                
                  setItems(result)
                  setLoading(false)
               },
@@ -39,8 +39,8 @@ const BlogPage = () => {
 
                 </div> :
                 items.map((item)=>(
-                  <div className='col-lg-5 col-sm-12 p-2'>
-                  <Cards   item={item} key={item.id}  />
+                  <div className='col-lg-5 col-sm-12 p-2 ' key={item.id}>
+                  <Cards   item={item}   />
                   </div>
                 ))
                 

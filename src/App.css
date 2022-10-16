@@ -5051,15 +5051,15 @@ span.PIN_1664778176651_embed_grid {
 .searchinput
 {
   position: relative;
+   
 }
 .searchlist{
   z-index:1;
   position:absolute;
-  width: 220px;
-  right: 0;
-  margin-right: 190px;
+  width: 100%;
+  
 }
-
+ 
 /* responsive*/
 @media screen and (max-width: 576px) { 
     .card{
@@ -5067,6 +5067,7 @@ span.PIN_1664778176651_embed_grid {
       height:450px;
       width: 300px;
     }
+     
     .details{
       padding-left: 0;
       padding-right: 0;
@@ -5076,13 +5077,6 @@ span.PIN_1664778176651_embed_grid {
       float: initial;
       margin: auto;
     }
-    .searchlist{
-      z-index:1;
-      position:absolute;
-      width: 100%;
-      left: 0;
-       
-      margin-right: initial;
-    }
+     
 }
 

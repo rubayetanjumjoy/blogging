@@ -21,11 +21,11 @@ const About = () => {
                          </p>
                     </div>
                     <div className='col-lg-4 col-sm-12 mt-5 '>
-                    <div class="card about" >
-                        <img src="https://static.wixstatic.com/media/f61af8_a8bd492674ee47289c1608ffdfc8a5e5.png/v1/crop/x_103,y_0,w_948,h_1069/fill/w_344,h_388,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/f61af8_a8bd492674ee47289c1608ffdfc8a5e5.png" class="card-img-top" alt="..."/>
-                        <div class="card-body">
-                            <h5 class="card-title">WANT TO CONNECT?</h5>
-                            <p class="card-text">Email me at <a href='#'>xyz@gmail.com</a></p>
+                    <div className="card about" >
+                        <img src="https://static.wixstatic.com/media/f61af8_a8bd492674ee47289c1608ffdfc8a5e5.png/v1/crop/x_103,y_0,w_948,h_1069/fill/w_344,h_388,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/f61af8_a8bd492674ee47289c1608ffdfc8a5e5.png" className="card-img-top" alt="..."/>
+                        <div className="card-body">
+                            <h5 className="card-title">WANT TO CONNECT?</h5>
+                            <p className="card-text">Email me at <a href='#'>xyz@gmail.com</a></p>
                          </div>
                         </div>
                     </div>
