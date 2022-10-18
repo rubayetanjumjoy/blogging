@@ -7,6 +7,7 @@ import BlogPage from './Components/BlogPage';
 import Error from './Components/Error';
 import Details from './Components/Details';
 function App() {
+  console.log(`${process.env.REACT_APP_BASE_URL}`)
    
   return (
     
